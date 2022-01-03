@@ -1,0 +1,17 @@
+{
+  "name": "ozon_stock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "KmamaSK <s@sha88.ru>",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.1.0",
+    "pg": "^8.7.1",
+    "pg-format": "^1.0.4"
+  }
+}
