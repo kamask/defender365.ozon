@@ -1,6 +1,6 @@
 FROM node:alpine
 WORKDIR /home/node/app
-COPY --chown=node:node . .
+COPY . .
 USER node
 RUN npm i
-CMD ["npm", "start"]
+CMD npm run start
