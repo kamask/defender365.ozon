@@ -3,4 +3,4 @@ WORKDIR /home/node/app
 COPY --chown=node:node . .
 USER node
 RUN npm i
-CMD ["index.js"]
+CMD ["npm", "start"]
