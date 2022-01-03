@@ -1,6 +1,7 @@
 FROM node:alpine
 WORKDIR /home/node/app
-COPY . .
-USER node
+COPY --chown=node:node . .
 RUN npm install
-CMD npm run start
+USER node
+ENTRYPOINT [ "npm", "run" ]
+CMD [ "start" ]
